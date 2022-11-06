@@ -1,0 +1,50 @@
+﻿@model UI.Models.EmpModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EmpModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfJoining)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfJoining)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PassCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PassCode)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("EditEmp", "EditEmp", new {  id = Model.PassCode }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
