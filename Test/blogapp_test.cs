@@ -22,17 +22,7 @@ namespace Test
             Console.WriteLine("Validation success");
 
         }
-       /* [TestCase(142)]
-        public void Employee_Passcode_Test(int p)
-        {
-
-            MyContext1 db = new MyContext1();
-            var found = db.EmpTable.ToList();
-
-            Assert.AreEqual(p, found[0].PassCode);
-            Console.WriteLine("Validation success");
-
-        }*/
+      
 
         [TestCase]
         public void Admin_password_Test()
