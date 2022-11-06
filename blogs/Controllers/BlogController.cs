@@ -59,7 +59,7 @@ namespace blogs.Controllers
             }
 
         }
-        [Route("FindById/{id:int?}")]
+        [Route("FindId/{id:int?}")]
         public bl GetBlogByID(int id)
         {
             BLClass2 empbal = new BLClass2();
